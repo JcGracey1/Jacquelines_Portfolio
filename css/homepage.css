@@ -12,7 +12,7 @@
   }
   
   .two-column>*:nth-child(1) {
-    flex: 2;
+    flex: 1;
   }
   
   .two-column>*:nth-child(2) {
