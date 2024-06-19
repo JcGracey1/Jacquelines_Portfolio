@@ -1,16 +1,18 @@
 h1, h2 {
-    margin: 0;
-    padding: 0;
-    /* font-size: 1.2em; */
-    font-weight: lighter;
+  font-size: 1.5em;  /* Un-comment and adjust to change the size relative to base size */
+  font-weight: normal;
   }
   
   #content {
-    width: calc(100% - 30px);
-    margin: 10px;
-    padding: 10px;
-    border: solid 1px #808;
-    font-family: sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px; /* Example size */
+    font-weight: normal; /* Options are normal, bold, 100, 200, ... 900 */
+    line-height: 1.6; /* Example line height, 1.6 is generally good for readability */
+    color: #333; /* Dark gray text color */
+    text-align: left; /* Commonly text is left aligned */
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #fafafa; /* Very light grey background */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */ /* Sets a base font size for all content within #content */
   }
   
   .minor-section {

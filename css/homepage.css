@@ -1,20 +1,55 @@
 
 .image-wrapper {
-    width: 100%x;
-    padding: 0;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
+  width: 100%;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;  /* Ensures the image inside is centered */
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
+}
   .two-column {
     display: flex;
     flex-direction: row;
   }
   
   .two-column>*:nth-child(1) {
-    flex: 1;
+    flex: 1.2;
   }
   
   .two-column>*:nth-child(2) {
-    flex: 1;
+    flex: 1.8;
   }
+
+  .center-text {
+    text-align: center;
+}
+
+.text-content {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px; /* Example size */
+  font-weight: normal; /* Options are normal, bold, 100, 200, ... 900 */
+  line-height: 1.6; /* Example line height, 1.6 is generally good for readability */
+  color: #333; /* Dark gray text color */
+  text-align: left; /* Commonly text is left aligned */
+  border: 1px solid #ccc; /* Light grey border */
+  background-color: #fafafa; /* Very light grey background */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+
+  @media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;  /* Stack children vertically on smaller screens */
+    }
+
+    .image-wrapper, .text-content {
+        flex: none;  /* Remove flex sizing to allow default block stacking */
+        width: 100%;  /* Full width for smaller screens */
+    }
+}
+
+.horizontal-space {
+  display: inline-block;
+  width: 140px;  /* Or however much space you want */
+}
