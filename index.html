@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- This title is used for tabs and bookmarks -->
+	<!-- Title for tabs and bookmarks -->
 	<title>Portfolio of Jacqueline Gracey</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-  <meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<!-- Meta Tags for Character Set and Viewport -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS for consistent styling -->
 	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<!-- Experiment-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/experiment.js"></script>
-	<link href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2" rel="stylesheet">
+
+	<!-- Include p5.js Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+	<!-- Link JavaScript File for Header Animation -->
+	<script src="./js/headerAnimation.js" defer></script>
+
+	<!-- Font Style -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<!-- Main Content Area -->
 	<main id="content">
-        <h1><span class="horizontal-space"></span>Portfolio of Jacqueline Gracey</h1>
+		<!-- Header Section with Title -->
+		<section class="header-section">
+			<h1 class="header-title">Portfolio of Jacqueline Gracey</h1>
+		</section>
 		<section class="two-column">
 			<div class="minor-section">
 					<!-- Note that all filenames use lowercase and no spaces -->
@@ -59,23 +68,29 @@
 					<li><a href="https://collectioncard.itch.io/good-boy-virtual-pet">Good Boy VP</a></li>
 				</ul>
 				<p> Good Boy VP is virtual pet the utilizes OpenAI in order to react to text commands given by the user
-					as well as an HFSM to dictact the different states the the dog can fall in and out of, depending
-					on the care given to it by the user.
+					as well as an HFSM to dictate the different states the the dog can fall in and out of, depending
+					on the care given to it by the user. I focused on designing the HFSM, which indicated various different
+					states the dog can be in and the transitions between them.
 
 					<br>Project members: Jacqueline Gracey, Thomas Wessel, Michael Campanile, and Michael Alaniz
 				</p>
 				<ul>
-					<li><a href="https://jcgracey1.github.io/Revolution_cows/">Revolution Cows</a></li>
+					<li><a href="https://jcgracey1.github.io/revolution_cows_rework/">Revolution Cows Rework</a></li>
 				</ul>
-				<p> Revolution Cows is a solo developed Cows vs. Aliens themed gallary shooter.
+				<p> Revolution Cows rework is a refactored version of a previous game project. I refactored to align with
+					good programming principles and adjusted logic to make the play infinite.
+					Solo project
 
 				</p>
             </div>
 
 		</section>
-		<nav id="links">
-			<!-- Put links to experiments here. -->
-		</nav>
 	</main>
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="contact-info">
+			<p>Contact: <a href="mailto:jacqueline.gracey@gmail.com">jacqueline.gracey@gmail.com</a></p>
+		</div>
+	</footer>
 </body>
 </html>

@@ -26,7 +26,7 @@
 }
 
 .text-content {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px; /* Example size */
   font-weight: normal; /* Options are normal, bold, 100, 200, ... 900 */
   line-height: 1.6; /* Example line height, 1.6 is generally good for readability */
@@ -52,4 +52,62 @@
 .horizontal-space {
   display: inline-block;
   width: 140px;  /* Or however much space you want */
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #653b31;
+  color: #fff;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box; /* Ensures padding and borders don't increase element width */
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+.header-left {
+  flex: 1.2;
+}
+
+.header-title {
+  padding: 30px;
+  background-color: #21501b;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #ccc;
+  transition: border-radius 0.1s ease-out;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent content from spilling out beyond the rounded corners */
+}
+
+
+
+.header-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: visible; /* Ensure the parent container doesn’t clip the header */
+}
+
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 24px;  /* Adjust font size for smaller screens */
+    padding: 15px;  /* Adjust padding for smaller screens */
+  }
 }
